@@ -219,7 +219,7 @@
     color:var(--mint); display:flex; align-items:center; gap:10px; margin-bottom:22px;
   }
   .eyebrow .rule{ width:26px; height:1px; background:var(--mint); opacity:0.6; }
-  h1{ font-size:clamp(1.75rem, 4.6vw, 3.8rem); font-weight:700; line-height:1.1; letter-spacing:-0.01em; margin-bottom:20px; }
+  h1{ font-size:40px ; font-weight:700; line-height:1.1; letter-spacing:-0.01em; margin-bottom:20px; }
   h1 .accent{ color:var(--teal-accent); }
   .hero-sub{ font-size:17px; color:rgba(247,245,239,0.78); max-width:520px; margin-bottom:18px; }
   .stack-line{ font-family:var(--font-mono); font-size:13px; color:var(--mint); opacity:0.85; margin-bottom:34px; }
@@ -389,6 +389,11 @@
   .lead-card .org{ font-family:var(--font-mono); font-size:11.5px; color:var(--mint); margin-bottom:8px; }
   .lead-card h3{ font-size:16px; font-weight:600; margin-bottom:10px; }
   .lead-card p{ font-size:13.8px; color:rgba(247,245,239,0.68); }
+  .lead-card-img{
+    width:100%; aspect-ratio:16/9; object-fit:cover; object-position:center top;
+    border-radius:8px; margin-bottom:16px; display:block;
+    border:1px solid var(--line-dark);
+  }
 
   /* contact */
   .contact-panel{
@@ -575,8 +580,8 @@
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>I'm a <strong>BSCS student at SZABIST Karachi</strong> (6th semester, expected 2027), and over the last couple of years I've gone from coursework to building production-shaped systems: a real-time online voting platform, an airline management portal with a full relational schema, and a deep-learning salary predictor trained in PyTorch.</p>
-          <p>I work comfortably across the stack — designing REST APIs and database schemas on the backend (<strong>ASP.NET Core, Node.js, PostgreSQL, SQL Server</strong>), and building the interfaces people actually use on the frontend (<strong>React, React Native, TypeScript</strong>).</p>
+          <p>I'm a BSCS student at SZABIST Karachi (6th semester, expected 2027), and over the last couple of years I've gone from coursework to building production-shaped systems: a real-time online voting platform, an airline management portal with a full relational schema, and a deep-learning salary predictor trained in PyTorch.</p>
+          <p>I work comfortably across the stack — designing REST APIs and database schemas on the backend (ASP.NET Core, Node.js, PostgreSQL, SQL Server), and building the interfaces people actually use on the frontend (React, React Native, TypeScript).</p>
           <p>Outside of code, I lead technical and marketing teams at university-scale events — coordinating people the same way I coordinate services in a system.</p>
         </div>
         <div class="fact-list reveal">
@@ -660,10 +665,9 @@
         <h2>Coordinating teams, not just code</h2>
       </div>
       <div class="lead-grid">
-        <div class="lead-card reveal"><div class="org">ZABEFEST · SZABIST UNIVERSITY</div><h3>Tech Core Director</h3><p>Coordinated a 6–10 member technical team managing event systems and digital infrastructure, supporting 300–1000 attendees through real-time setup and issue resolution.</p>
-      </div>
-        <div class="lead-card reveal"><div class="org">ACM SOCIETY · SZABIST UNIVERSITY</div><h3>Marketing Director</h3><p>Led a 6–10 person marketing team through multi-channel campaigns, increasing student engagement and reaching 300–600 students per event cycle.</p></div>
-        <div class="lead-card reveal"><div class="org">DEVELOPERS DAY · FAST UNIVERSITY</div><h3>Brand Ambassador</h3><p>Represented Developers Day to the student tech community through direct outreach and peer engagement, expanding event reach.</p></div>
+        <div class="lead-card reveal"><img class="lead-card-img" src="assets/TECHCORE.JPG" alt="Tech Core Director — ZAB E-FEST 2026 award ceremony" loading="lazy"><div class="org">ZABEFEST · SZABIST UNIVERSITY</div><h3>Tech Core Director</h3><p>Coordinated a 6–10 member technical team managing event systems and digital infrastructure, supporting 300–1000 attendees through real-time setup and issue resolution.</p></div>
+        <div class="lead-card reveal"><img class="lead-card-img" src="assets/ACM.png" alt="ACM Marketing Director" loading="lazy"><div class="org">ACM SOCIETY · SZABIST UNIVERSITY</div><h3>Marketing Director</h3><p>Led a 6–10 person marketing team through multi-channel campaigns, increasing student engagement and reaching 300–600 students per event cycle.</p></div>
+        <div class="lead-card reveal"><img class="lead-card-img" src="assets/DEV_DAY.png" alt="Brand Ambassador — DEVELOPERS DAY Fast University" loading="lazy"><div class="org">DEVELOPERS DAY · FAST UNIVERSITY</div><h3>Brand Ambassador</h3><p>Represented Developers Day to the student tech community through direct outreach and peer engagement, expanding event reach.</p></div>
       </div>
     </div>
   </section>
